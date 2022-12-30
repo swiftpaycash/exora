@@ -76,8 +76,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/">Make an Investment</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/">Deposit Funds</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/invest">Make an Investment</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/deposit-fundsx">Deposit Funds</a></li>
                
               </ul>
             </div>
@@ -90,18 +90,18 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/">Withdraw Funds </a></li>
+                <li class="nav-item"><a class="nav-link" href="/withdrawal">Withdraw Funds </a></li>
               </ul>
             </div>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/">View Withdrawals</a></li>
+                <li class="nav-item"><a class="nav-link" href="/view-withdrawal">View Withdrawal</a></li>
               </ul>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="/earnings">
               <i class="icon-bar-graph menu-icon"></i>
               <span class="menu-title">Earnings</span>
             </a>
@@ -117,7 +117,36 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-      
+          <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Your Profile</h4>
+                <p class="card-description">
+                  Users basic profile
+                </p>
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-control" id="first_name" value="<%= user.first_name %>">
+                  </div>
+                  <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" value="<%= user.last_name %>">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" value="<%= user.email %>">
+                  </div>
+                  <div class="form-group">
+                    <label for="referal">Referal Code</label>
+                    <input type="text" class="form-control" id="referal" value="<%= user.referalcode %>">
+                  </div>
+                 
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
          

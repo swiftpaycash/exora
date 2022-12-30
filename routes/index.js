@@ -52,21 +52,24 @@ router.get('/invest', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
+router.get('/deposit-funds', ensureAuthenticated, (req, res) =>
+  res.render('deposits', {
+    user: req.user
+  })
+);
 
-router.get('/return-on-investments', ensureAuthenticated, (req, res)=>{
-  res.render('returns')
-  user: req.user
-})
+
 router.get('/withdrawal', ensureAuthenticated, (req, res) =>
   res.render('withdrawal', {
     user: req.user
   })
 );
-router.get('/history', ensureAuthenticated, (req, res) =>
+router.get('/view-withdrawal', ensureAuthenticated, (req, res) =>
   res.render('history', {
     user: req.user
   })
 );
+
 router.get('/analytics', ensureAuthenticated, (req, res) =>
   res.render('analytics', {
     user: req.user
@@ -81,6 +84,11 @@ router.get('/settings', ensureAuthenticated, (req, res) =>
 
 router.get('/withdrawal-success', ensureAuthenticated, (req, res) =>
   res.render('success', {
+    user: req.user
+  })
+);
+router.get('/earnings', ensureAuthenticated, (req, res) =>
+  res.render('earnings', {
     user: req.user
   })
 );
@@ -132,19 +140,12 @@ router.get('/binance-pay', ensureAuthenticated, (req, res) =>
   })
 );
 
-
-router.get('/doge-pay', ensureAuthenticated, (req, res) =>
-  res.render('doge', {
+router.get('/busd-pay', ensureAuthenticated, (req, res) =>
+  res.render('busd', {
     user: req.user
   })
 );
 
-
-router.get('/ripple-pay', ensureAuthenticated, (req, res) =>
-  res.render('ripplepay', {
-    user: req.user
-  })
-);
 
 router.get('/usdt-pay', ensureAuthenticated, (req, res) =>
   res.render('usdt', {
@@ -158,11 +159,7 @@ router.get('/ltc-pay', ensureAuthenticated, (req, res) =>
 );
 
 
-router.get('/tron-pay', ensureAuthenticated, (req, res) =>
-  res.render('tronpay', {
-    user: req.user
-  })
-);
+
 
 
 module.exports = router;

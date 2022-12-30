@@ -38,19 +38,11 @@ first_name: {
     type: String,
     default: '00.00'
   },
-  sector:{
+  planType:{
     type: String,
     default: 'None'
   },
-  totalprofit:{
-    type: String,
-    default: "00.00"
-  },
-  tatalinvestment:{
-    type: Number,
-    default: 0
-  },
-  referacount :{
+  referalcount :{
     type: Number,
     default: 1
   },
@@ -61,22 +53,6 @@ first_name: {
   refaralsbonus:{
     type: String,
     default: '00.00'
-  },
-  address:{
-    type: String,
-    required: false
-  },
-  city:{
-    type: String,
-    required: false
-  },
-  zipcode:{
-    type: String,
-    required: false
-  },
-  idcard:{
-    type: String,
-    required: false
   },
   referalcode:{
     type: String,
