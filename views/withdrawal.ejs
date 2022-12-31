@@ -135,7 +135,7 @@
                   <div class="card card-tale">
                     <div class="card-body">
                       <p class="mb-4">Account Balance</p>
-                      <p class="fs-30 mb-2">4,006</p>
+                      <p class="fs-30 mb-2">$ <%= " " + user.availbalance %> </p>
                      
                     </div>
                   </div>
@@ -144,7 +144,7 @@
                   <div class="card card-dark-blue">
                     <div class="card-body">
                       <p class="mb-4">Total Withdrawal</p>
-                      <p class="fs-30 mb-2">61,344</p>
+                      <p class="fs-30 mb-2">$ <%= " " + user.withdrawals %> </p>
                       
                     </div>
                   </div>
@@ -238,6 +238,7 @@
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+  <% include ./partials/chat %>
 </body>
 
 </html>

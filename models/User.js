@@ -38,7 +38,7 @@ first_name: {
     type: String,
     default: '00.00'
   },
-  planType:{
+  plantype:{
     type: String,
     default: 'None'
   },
