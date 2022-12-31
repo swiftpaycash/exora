@@ -92,6 +92,11 @@ router.get('/earnings', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
+router.get('/help-desk', ensureAuthenticated, (req, res) =>
+  res.render('help', {
+    user: req.user
+  })
+);
 
 router.get('/deposit-success', ensureAuthenticated, (req, res) =>
   res.render('deposit', {

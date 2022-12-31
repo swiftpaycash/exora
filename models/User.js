@@ -44,7 +44,7 @@ first_name: {
   },
   referalcount :{
     type: Number,
-    default: 1
+    default: 0
   },
   acticvatedaccount:{
     type: Boolean,
