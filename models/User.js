@@ -34,6 +34,14 @@ first_name: {
     type: String,
     default: '00.00'
   },
+  activedeposit:{
+    type: String,
+    default: '00.00'
+  },
+  activeinvestment:{
+    type: String,
+    default: '00.00'
+  },
   withdrawals:{
     type: String,
     default: '00.00'
